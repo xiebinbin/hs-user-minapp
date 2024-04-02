@@ -23,8 +23,7 @@ export default defineConfig(async (merge, { command, mode }) => {
     copy: {
       patterns: [
       ],
-      options: {
-      }
+      options: {},
     },
     framework: 'react',
     compiler: 'webpack5',
@@ -36,8 +35,8 @@ export default defineConfig(async (merge, { command, mode }) => {
         pxtransform: {
           enable: true,
           config: {
-
-          }
+            selectorBlackList: [/van-/],
+          },
         },
         url: {
           enable: true,
@@ -58,6 +57,7 @@ export default defineConfig(async (merge, { command, mode }) => {
       }
     },
     h5: {
+      esnextModules: [/@antmjs[\/]vantui/],
       publicPath: '/',
       staticDirectory: 'static',
       output: {
@@ -73,6 +73,10 @@ export default defineConfig(async (merge, { command, mode }) => {
         autoprefixer: {
           enable: true,
           config: {}
+        },
+        pxtransform: {
+          enable: true,
+          config: {},
         },
         cssModules: {
           enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true

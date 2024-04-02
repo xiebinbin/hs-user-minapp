@@ -1,0 +1,30 @@
+@import '../../base.scss';
+
+.scrollContainer{
+  .scrollItem{
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    padding: 20px;
+    .itemLeft{
+      flex: 1;
+
+    }
+    .imageItem {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.itemTitle{
+
+}
+
+.timeTitle{
+  color: '#9CA3AF';
+  font-size: 18px;
+}
+
+
+
