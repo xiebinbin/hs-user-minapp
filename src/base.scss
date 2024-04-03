@@ -1,6 +1,6 @@
 $primary-color: #0369A1;
 $border-radius-md: 30px;
-
+$primary-font-size: 30px;
 @mixin text-ellipsis {
   overflow: hidden;
   /*文本不会换行*/
@@ -20,4 +20,13 @@ page {
   --field-text-area-min-height: 30px;
   --field-word-limit-font-size: 20px;
   --field-word-limit-line-height: 30px;
+
+  --search-padding: 20px;
+  --search-action-padding: 10px;
+  --search-input-height: 40px;
+  --search-label-font-size: 20px;
+
+  // 分页
+  --pagination-font-size: $primary-font-size;
+  --pagination-prev-next-padding: 10px;
 }
