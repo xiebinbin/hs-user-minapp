@@ -1,8 +1,23 @@
 $primary-color: #0369A1;
+$border-radius-md: 30px;
+
 @mixin text-ellipsis {
   overflow: hidden;
   /*文本不会换行*/
   white-space: nowrap;
   /*当文本溢出包含元素时，以省略号表示超出的文本*/
   text-overflow: ellipsis;
+}
+
+page {
+  --button-small-height: 50px;
+  --button-small-font-size: 20px;
+  --button-small-border-radius: 10px;
+  --button-small-min-width: 60px;
+  --field-font-size: 30px;
+  --field-error-message-text-font-size: 20px;
+  --button-primary-background-color:#0369A1;
+  --field-text-area-min-height: 30px;
+  --field-word-limit-font-size: 20px;
+  --field-word-limit-line-height: 30px;
 }

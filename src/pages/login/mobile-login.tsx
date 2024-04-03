@@ -16,14 +16,30 @@ function WeLogin() {
         <Text className='item_margin' style={{ fontWeight: 700, fontSize: '20px' }}>三林康德卫生服务中心</Text>
       </View>
       <View>
-        <CellGroup>
+        <CellGroup style={{ margin: 0, padding: 0 }}>
           <Field
+            style='padding:0'
+            titleWidth="150"
+            className='field_item'
             value={state.phone}
             label="手机号码"
             placeholder="请输入手机号"
-            errorMessage="手机号格式错误"
-            autosize={{ minHeight: '30px' }}
-            border={false}
+            border={true}
+          />
+          <Field
+            style='padding:0;margin:0'
+            titleWidth="150"
+            className='field_item'
+            center
+            clearable
+            label="短信验证码"
+            placeholder="请输入短信验证码"
+            border
+            renderButton= {
+              <Button size="small" plain type="primary" style={{alignSelf: 'center',margin:0}}>
+                发送验证码
+              </Button>
+            }
           />
         </CellGroup>
       </View>

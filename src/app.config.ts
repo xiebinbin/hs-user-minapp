@@ -1,15 +1,13 @@
 export default defineAppConfig({
   pages: [
-    'pages/login/wechat-login',
     'pages/login/mobile-login',
+    'pages/login/wechat-login',
     'pages/index/index',
     'pages/user-center/index',
     'pages/home/index',
   ],
   tabBar: {
     list: [
-
-
       {
         iconPath: 'assets/images/tab-home.png',
         selectedIconPath: 'assets/images/tab-home-select.png',
