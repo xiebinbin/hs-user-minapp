@@ -13,6 +13,15 @@ export default defineAppConfig({
     'pages/login/wechat-login',
     'pages/index/index',
 
+    'pages/order/sub/order-record',
+    'pages/order/sub/order-detail',
+    'pages/order/sub/order-success',
+    'pages/order/sub/confirm-expert',
+    'pages/order/sub/confirm-simple',
+    'pages/user-center/index',
+    'pages/user-center/sub/member-edit',
+    'pages/user-center/sub/member-detail',
+    'pages/user-center/sub/member-list',
   ],
   tabBar: {
     list: [

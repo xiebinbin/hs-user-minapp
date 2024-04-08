@@ -1,0 +1,19 @@
+
+.position_items{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.position_item{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.position_title{
+  display: flex;
+  flex-direction: column;
+}
