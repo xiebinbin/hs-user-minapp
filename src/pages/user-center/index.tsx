@@ -1,5 +1,5 @@
 import { View, Text } from '@tarojs/components'
-import { Image, Divider, Icon } from '@antmjs/vantui'
+import { Image, Icon,Divider } from '@antmjs/vantui'
 
 import './index.css'
 

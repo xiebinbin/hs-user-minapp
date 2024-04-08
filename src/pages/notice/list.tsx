@@ -3,7 +3,7 @@ import { useReady } from '@tarojs/taro'
 import { useState } from 'react'
 import { NoticeListItem } from './preview'
 import { Search, Pagination,Icon } from '@antmjs/vantui'
-
+import {PageButton} from '@/component/page/pagination'
 import './list.scss'
 
 function NoticePageList() {
@@ -67,7 +67,7 @@ function NoticePageList() {
         {n.imgUrl ? <Image className='imageItem' src={n.imgUrl} /> : null}
       </View>
     })}
-    <Pagination
+    {/* <Pagination
       style={{padding: 0,margin: 0,alignItems: 'center' ,justifyContent: 'center'}}
       modelValue={currentPage2}
       pageCount={12}
@@ -75,7 +75,11 @@ function NoticePageList() {
       onChange={pageChange2}
       prevText={<Icon name='arrow-left' color='#969799' size='24rpx' />}
       nextText={<Icon name='arrow' color='#969799' size='24rpx' />}
-    />
+    /> */}
+    <PageButton  modelValue={currentPage2}
+      pageCount={12}
+      onChange={pageChange2}>
+    </PageButton>
   </ScrollView>
 }
 

@@ -1,8 +1,7 @@
-import { View, Text } from '@tarojs/components'
-import { Image, CellGroup, Button, Field } from '@antmjs/vantui'
-import '@antmjs/vantui/es/field/style'
-import './login.scss'
 import { useState } from 'react'
+import { View, Text } from '@tarojs/components'
+import { Image, Button, CellGroup, Field } from '@antmjs/vantui'
+import './login.scss'
 
 function WeLogin() {
   const [state, setState] = useState({

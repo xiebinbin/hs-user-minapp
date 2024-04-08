@@ -13,8 +13,8 @@ function WeLogin() {
         <Text className='item_margin' style={{ fontWeight: 700, fontSize: '20px' }}>三林康德卫生服务中心</Text>
       </View>
       <View className='button_area'>
-        <Button className='login_button_item ' style={{backgroundColor: '#0369A1',color: 'white'}}   size='normal'>微信登录</Button>
-        <Button className='login_button_item ' style={{backgroundColor: '#FFFFFF',color:'#0369A1',border:'1px solid #0369A1 '}}  size='normal' type="primary">
+        <Button className='login_button_item' style={{backgroundColor: '#0369A1',color: 'white'}}   size='normal'>微信登录</Button>
+        <Button className='login_button_item' style={{backgroundColor: '#FFFFFF',color:'#0369A1',border:'1px solid #0369A1 '}}  size='normal' type="primary">
           手机登录
         </Button>
       </View>

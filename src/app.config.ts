@@ -1,11 +1,18 @@
 export default defineAppConfig({
   pages: [
-    'pages/notice/detail',
+
+    'pages/order/sub/doc-list',
+    'pages/order/sub/dep-detail',
+    'pages/order/sub/doc-detail',
     'pages/notice/list',
+    'pages/notice/detail',
+    'pages/order/choose-department',
+    'pages/order/choose-hospital',
+    'pages/order/sub/confirm-agreement',
     'pages/login/mobile-login',
     'pages/login/wechat-login',
     'pages/index/index',
-    'pages/user-center/index',
+
   ],
   tabBar: {
     list: [
