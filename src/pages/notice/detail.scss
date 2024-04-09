@@ -1,0 +1,20 @@
+.detail_container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  .detail_title{
+    font-weight: 400;
+    font-size: 32px;
+    margin: 20px;
+  }
+  .detail_stamp{
+    font-size: 20px;
+    color: '#959595';
+    text-align: left;
+    margin: 20px;
+  }
+  .detail_content{
+    margin: 20px;
+
+  }
+}

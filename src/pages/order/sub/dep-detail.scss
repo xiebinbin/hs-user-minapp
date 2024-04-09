@@ -1,0 +1,49 @@
+@import '../../../base.scss';
+
+.detail_header {
+  display: flex;
+
+  .detail_avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .detail_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10rpx;
+    overflow-x: auto;
+  }
+}
+
+.detail_describe {
+  margin: 20px 0;
+  color: '#ABABAB';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.hide_area {
+  margin: 20px 0;
+}
+
+.detail_schedules {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.detail_day_half {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 10px
+}
+
+.schedule_line{
+  // display: flex;
+  // background-color: pink;
+  // justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #EBEDF0;
+}

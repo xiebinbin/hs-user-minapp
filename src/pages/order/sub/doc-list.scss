@@ -1,0 +1,32 @@
+@import '../../../base.scss';
+
+.order_side_bar {
+  border-left: 8px solid $primary-color;
+  font-weight: $primary-sub-title-weight;
+  font-size: 36px;
+}
+
+.position_items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+.position_item {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+.position_avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.position_title {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

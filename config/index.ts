@@ -23,11 +23,15 @@ export default defineConfig(async (merge, { command, mode }) => {
     copy: {
       patterns: [
       ],
-      options: {
-      }
+      options: {},
     },
     framework: 'react',
-    compiler: 'webpack5',
+    compiler: {
+      type: 'webpack5',
+      prebundle: {
+        enable: false
+      }
+    },
     cache: {
       enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
     },
@@ -36,8 +40,8 @@ export default defineConfig(async (merge, { command, mode }) => {
         pxtransform: {
           enable: true,
           config: {
-
-          }
+            selectorBlackList: [/van-/],
+          },
         },
         url: {
           enable: true,
@@ -58,6 +62,7 @@ export default defineConfig(async (merge, { command, mode }) => {
       }
     },
     h5: {
+      esnextModules: [/@antmjs[\/]vantui/],
       publicPath: '/',
       staticDirectory: 'static',
       output: {
@@ -73,6 +78,10 @@ export default defineConfig(async (merge, { command, mode }) => {
         autoprefixer: {
           enable: true,
           config: {}
+        },
+        pxtransform: {
+          enable: true,
+          config: {},
         },
         cssModules: {
           enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
